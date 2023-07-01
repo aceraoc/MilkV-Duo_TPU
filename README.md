@@ -49,6 +49,7 @@ source cvitek_mlir/cvitek_envs.sh
 ```
 ### 2.获取模型文件
 (ps:考虑到有些网友网速比较差所以我把模型已经下下来放到github项目里去了,如果想把我的过程重走一遍的朋友可以试试执行getonnx.py这个python脚本)
+
 ```bash
 mkdir -p /work/model_resnet18/workspace && cd model_resnet18
 touch getonnx.py
@@ -81,6 +82,8 @@ cp $MLIR_PATH/tpuc/regression/data/cat.jpg .
 cp -rf $MLIR_PATH/tpuc/regression/data/images .
 ln -s /work/cvitek_mlir/tpuc/python/cvi_toolkit/tool/model_transform.py model_transform.py
 ln -s /work/cvitek_mlir/tpuc/python/cvi_toolkit/tool/run_calibration.py run_calibration.py
+```
+
 ### 3.onnx转换为mlir
 官方对于转换脚本model_transform.py的解释如下
 | 参数名称 |  描述|
