@@ -9,7 +9,7 @@ MilkV Duo的开发板的环境需要在docker中运行，这样可以避免无�
 ```bash
 sudo snap install docker
 ```
-### 2.在github拉取发布的项目：
+### 2.在github拉取项目：
 ```bash
 git clone https://github.com/aceraoc/MilkV-Duo_TPU.git
 ```
